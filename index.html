@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Styleself</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
+</head>
+<body>
+
+  <header>
+    <h1>Styleself</h1>
+    <p>Viste lo que eres.</p>
+  </header>
+
+  <main>
+
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+      <p>Por ahora, ofrecemos una línea exclusiva de polos con diseños únicos.</p>
+
+      <div class="producto">
+        <img src="img/polo1.jpg" alt="Polo diseño urbano" width="200" />
+        <h3>Polo Estilo Urbano</h3>
+        <p>Precio original: <s>S/ 50.00</s></p>
+        <p>Precio con descuento: <strong>S/ 39.90</strong></p>
+        <label for="cantidad1">Cantidad:</label>
+        <input type="number" id="cantidad1" name="cantidad1" min="1" value="1" />
+      </div>
+
+      <div class="producto">
+        <img src="img/polo2.jpg" alt="Polo gráfico minimalista" width="200" />
+        <h3>Polo Minimalista</h3>
+        <p>Precio original: <s>S/ 45.00</s></p>
+        <p>Precio con descuento: <strong>S/ 34.90</strong></p>
+        <label for="cantidad2">Cantidad:</label>
+        <input type="number" id="cantidad2" name="cantidad2" min="1" value="1" />
+      </div>
+
+    </section>
+
+        <section id="mision">
+      <h2>Misión</h2>
+      <p>Crear ropa urbana cómoda y con identidad para jóvenes que quieren expresarse sin miedo, combinando estilo, autenticidad y diseño original.</p>
+    </section>
+
+    <section id="vision">
+      <h2>Visión</h2>
+      <p>Convertirnos en una marca referente de moda juvenil en Perú y Latinoamérica, destacando por nuestro compromiso con la creatividad, la inclusión y la calidad.</p>
+    </section>
+
+    <section id="valores">
+      <h2>Valores</h2>
+      <ul>
+        <li>Creatividad</li>
+        <li>Autenticidad</li>
+        <li>Inclusión</li>
+        <li>Sostenibilidad</li>
+        <li>Libertad de expresión</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto / Pedidos</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+        <label for="email">Correo electrónico:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="mensaje">Mensaje o pedido:</label><br />
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Styleself. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
+
