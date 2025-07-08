@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Styleself</title>
   <link rel="icon" href="img/favicon.png" type="image/png">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -14,75 +15,147 @@
     <p>Viste lo que eres.</p>
   </header>
 
-  <main>
+  <nav>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#mision">Misión</a>
+    <a href="#vision">Visión</a>
+    <a href="#valores">Valores</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
+  <main class="main-header">
     <section id="catalogo">
       <h2>Catálogo</h2>
-      <p>Por ahora, ofrecemos una línea exclusiva de polos con diseños únicos.</p>
+      <p>Explora nuestra variedad de polos exclusivos para todos los estilos.</p>
 
-      <div class="producto">
-        <img src="img/polo1.jpg" alt="Polo diseño urbano" width="200" />
-        <h3>Polo Estilo Urbano</h3>
-        <p>Precio original: <s>S/ 50.00</s></p>
-        <p>Precio con descuento: <strong>S/ 39.90</strong></p>
-        <label for="cantidad1">Cantidad:</label>
-        <input type="number" id="cantidad1" name="cantidad1" min="1" value="1" />
+      <div class="catalogo-grid">
+        <div class="producto">
+          <img src="img/EstiloUrbano.jpg" alt="Polo Estilo Urbano"/>
+          <h3>Polo Estilo Urbano</h3>
+          <p>Precio original: <s>S/ 50.00</s></p>
+          <p>Precio con descuento: <strong>S/ 39.90</strong></p>
+          <label for="cantidad1">Cantidad:</label>
+          <input type="number" id="cantidad1" name="cantidad1" min="1" value="1" />
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/Minimalista.jpg" alt="Polo Minimalista"/>
+          <h3>Polo Minimalista</h3>
+          <p>Precio original: <s>S/ 45.00</s></p>
+          <p>Precio con descuento: <strong>S/ 34.90</strong></p>
+          <label for="cantidad2">Cantidad:</label>
+          <input type="number" id="cantidad2" name="cantidad2" min="1" value="1" />
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/RegularFit.jpg" alt="Polo Regular Fit"/>
+          <h3>Polo Regular Fit</h3>
+          <p>Precio original: <s>S/ 40.00</s></p>
+          <p>Precio con descuento: <strong>S/ 29.90</strong></p>
+          <label for="cantidad2">Cantidad:</label>
+          <input type="number" id="cantidad3" name="cantidad3" min="1" value="1" />
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/SlimFit.jpg" alt="Polo Slim Fit"/>
+          <h3>Polo Slim Fit</h3>
+          <p>Precio original: <s>S/ 55.00</s></p>
+          <p>Precio con descuento: <strong>S/ 44.90</strong></p>
+          <label for="cantidad2">Cantidad:</label>
+          <input type="number" id="cantidad4" name="cantidad4" min="1" value="1" />
+          <button class="btn-comprar">Comprar</button>
+        </div>   
+
+        <div class="producto">
+          <img src="img/MangaLarga.jpg" alt="Polo Manga Larga" />
+          <h3>Polo Manga Larga</h3>
+          <p>Precio original: <s>S/ 75.00</s></p>
+          <p>Precio con descuento: <strong>S/ 64.90</strong></p>
+          <label for="cantidad2">Cantidad:</label>
+          <input type="number" id="cantidad5" name="cantidad5" min="1" value="1" />
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/Oversize.jpg" alt="Polo Oversize"/>
+          <h3>Polo Oversize</h3>
+          <p>Precio original: <s>S/ 65.00</s></p>
+          <p>Precio con descuento: <strong>S/ 54.90</strong></p>
+          <label for="cantidad2">Cantidad:</label>
+          <input type="number" id="cantidad6" name="cantidad6" min="1" value="1" />
+          <button class="btn-comprar">Comprar</button>
+        </div>
       </div>
-
-      <div class="producto">
-        <img src="img/polo2.jpg" alt="Polo gráfico minimalista" width="200" />
-        <h3>Polo Minimalista</h3>
-        <p>Precio original: <s>S/ 45.00</s></p>
-        <p>Precio con descuento: <strong>S/ 34.90</strong></p>
-        <label for="cantidad2">Cantidad:</label>
-        <input type="number" id="cantidad2" name="cantidad2" min="1" value="1" />
-      </div>
-
     </section>
 
-        <section id="mision">
-      <h2>Misión</h2>
+    <section id="mision">
+      <h2>👁️ Misión</h2>
       <p>Crear ropa urbana cómoda y con identidad para jóvenes que quieren expresarse sin miedo, combinando estilo, autenticidad y diseño original.</p>
     </section>
 
     <section id="vision">
-      <h2>Visión</h2>
+      <h2>🎯 Visión</h2>
       <p>Convertirnos en una marca referente de moda juvenil en Perú y Latinoamérica, destacando por nuestro compromiso con la creatividad, la inclusión y la calidad.</p>
     </section>
 
     <section id="valores">
       <h2>Valores</h2>
-      <ul>
-        <li>Creatividad</li>
-        <li>Autenticidad</li>
-        <li>Inclusión</li>
-        <li>Sostenibilidad</li>
-        <li>Libertad de expresión</li>
-      </ul>
+      <div class="valores-grid">
+        <div class="valor-card">
+          <h3>🎨 Creatividad</h3>
+          <p>Diseñamos con originalidad y estilo único.</p>
+        </div>
+        <div class="valor-card">
+          <h3>💎 Autenticidad</h3>
+          <p>Valoramos lo genuino en cada prenda y persona.</p>
+        </div>
+        <div class="valor-card">
+          <h3>🌍 Inclusión</h3>
+          <p>Celebramos todas las identidades y culturas.</p>
+        </div>
+        <div class="valor-card">
+          <h3>♻️ Sostenibilidad</h3>
+          <p>Cuidamos el planeta con decisiones conscientes.</p>
+        </div>
+        <div class="valor-card">
+          <h3>🗣️ Expresión</h3>
+          <p>Tu ropa habla por ti. Nosotros te escuchamos.</p>
+        </div>
+      </div>
     </section>
 
     <section id="contacto">
+      
       <h2>Contacto / Pedidos</h2>
-      <form action="#" method="post">
-        <label for="nombre">Nombre:</label><br />
-        <input type="text" id="nombre" name="nombre" required /><br /><br />
+      <p>¿Tienes dudas o quieres hacer un pedido personalizado? ¡Escríbenos!</p>
+      <div id="contacto-container"></div>
+        <form action="#" method="post" class="section__form">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
 
-        <label for="email">Correo electrónico:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-        <label for="mensaje">Mensaje o pedido:</label><br />
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br /><br />
+          <div class="form-group">
+            <label for="mensaje">Mensaje o pedido:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
 
-        <button type="submit">Enviar</button>
-      </form>
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </div>
     </section>
-
   </main>
-
-  <footer>
-    <p>&copy; 2025 Styleself. Todos los derechos reservados.</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Styleself. Todos los derechos reservados.</p>
+</footer>
 
 </body>
 </html>
-
