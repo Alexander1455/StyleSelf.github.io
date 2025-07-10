@@ -64,6 +64,7 @@ section {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   align-items: start;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -101,9 +102,13 @@ button {
 }
 
 /* formulario */
-#contacto {
+.contacto {
   max-width: auto;
   animation: fadeInUp 1s ease;
+}
+
+.contacto_container {
+  margin-top: 30px;
 }
 
 #contacto form {
@@ -188,6 +193,15 @@ footer {
 .btn-comprar:hover {
   background-color: #333;
   transform: scale(1.05);
+}
+
+.button_form {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.btn-enviar {
+  margin: 0;
 }
 
 /* Valores */
