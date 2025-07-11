@@ -22,12 +22,27 @@ header {
 }
 
 nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
   background-color: #222;
   padding: 1rem;
   text-align: center;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.nav-text {
+  display: inline-block;
+}
+
+.nav-icon {
+  display: none;
+  width: 15px;
+  height: 30px;
+
 }
 
 nav a {
@@ -72,7 +87,7 @@ section {
   animation: fadeInUp 1s ease;
 }
 
-img {
+.producto img {
     width: 300px;
     height: 400px;
     border-radius: 10px;
@@ -257,4 +272,16 @@ footer {
   0% { transform: scale(1); }
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  .nav-text {
+    display: none;
+  }
+  .nav-icon {
+    display: inline-block;
+  }
 }
